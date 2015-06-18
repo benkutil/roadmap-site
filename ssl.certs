@@ -1,0 +1,2 @@
+ssl_certificate /etc/ssl/localcerts/wildcard.ppmroadmap.chain.crt;
+ssl_certificate_key /etc/ssl/localcerts/wildcard.ppmroadmap.com.key;
