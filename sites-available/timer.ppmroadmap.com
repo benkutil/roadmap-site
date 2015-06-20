@@ -27,7 +27,13 @@ server {
   server_name timer.ppmroadmap.com;
 
   # Path for static files
-  root /var/www/timer.ppmroadmap.com/production/current;
+  location / {
+    root /var/www/timer.ppmroadmap.com/production/current;
+  }
+
+  location /api {
+    proxy_pass https://api.ppmroadmap.com/v1.2/;
+  }
 
   #Specify a charset
   charset utf-8;
